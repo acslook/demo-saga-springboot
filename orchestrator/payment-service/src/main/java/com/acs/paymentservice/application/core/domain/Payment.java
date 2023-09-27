@@ -8,11 +8,11 @@ public class Payment {
 		
 	}
 	
-	public Payment(Integer id, Integer userId, Integer saleid, BigDecimal value) {
+	public Payment(Integer id, Integer userId, Integer saleId, BigDecimal value) {
 		super();
 		this.id = id;
 		this.userId = userId;
-		this.saleid = saleid;
+		this.saleId = saleId;
 		this.value = value;
 	}
 
@@ -20,7 +20,7 @@ public class Payment {
 	
 	private Integer userId;
 	
-	private Integer saleid;
+	private Integer saleId;
 	
 	private BigDecimal value;
 
@@ -41,11 +41,11 @@ public class Payment {
 	}
 
 	public Integer getSaleid() {
-		return saleid;
+		return saleId;
 	}
 
 	public void setSaleid(Integer saleid) {
-		this.saleid = saleid;
+		this.saleId = saleid;
 	}
 
 	public BigDecimal getValue() {

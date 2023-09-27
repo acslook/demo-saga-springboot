@@ -8,6 +8,6 @@ import com.acs.paymentservice.application.core.domain.Payment;
 @Mapper(componentModel = "spring")
 public interface PaymentEntityMapper {
 
-	PaymentEntity toPayment(Payment payment);
+	PaymentEntity toPaymentEntity(Payment payment);
 	
 }

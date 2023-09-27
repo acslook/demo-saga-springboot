@@ -19,7 +19,7 @@ public class SavePaymentAdapter implements SavePaymentOutputPort {
 	
 	@Override
 	public void save(Payment payment) {
-		var paymentEntity = paymentEntityMapper.toPayment(payment);
+		var paymentEntity = paymentEntityMapper.toPaymentEntity(payment);
 		
 		paymentRepository.save(paymentEntity);
 	}
